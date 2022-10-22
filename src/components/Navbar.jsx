@@ -10,7 +10,8 @@ const logout =()=>{
   dispatch({
       type:"LOGOUT"
   })
-  navigate("/login", { replace: true });
+  navigate("/register", { replace: true });
+  localStorage.removeItem("user")
   window.location.reload()
 }
   return (
