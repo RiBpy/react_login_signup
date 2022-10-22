@@ -2,7 +2,6 @@ import { legacy_createStore as createStore} from 'redux'
 const initialState=JSON.parse(localStorage.getItem("user"))||{
     users:[]
 }
-console.log(initialState);
 const reducer=(state=initialState,action)=>{
     switch(action.type){
 
